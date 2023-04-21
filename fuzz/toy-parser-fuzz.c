@@ -12,5 +12,9 @@ int LLVMFuzzerTestOneInput(const uint8_t *Data, size_t Size) {
     Toy_initLexer(&lexer, Data);
     Toy_initParser(&parser, &lexer);
 
+    Toy_ASTNode* node = Toy_scanParser(&parser);
+
+
+    Toy_freeASTNode(node);
     Toy_freeParser(&parser);
 }

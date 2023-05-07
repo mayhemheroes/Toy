@@ -1,0 +1,6 @@
+project: toy
+target: toy-parser-fuzz
+
+cmds:
+    - cmd: ./toy-parser-fuzz
+      libfuzzer: true

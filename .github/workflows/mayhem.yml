@@ -70,7 +70,3 @@ jobs:
         mayhem-token: ${{ secrets.MAYHEM_TOKEN }}
         args: --image ${{ needs.build.outputs.image }} --file ${{ 
           matrix.mayhemfile }} --duration 300
-    - name: Upload SARIF file(s)
-      uses: github/codeql-action/upload-sarif@v2
-      with:
-        sarif_file: sarif

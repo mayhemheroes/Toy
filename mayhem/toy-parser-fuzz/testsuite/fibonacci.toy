@@ -1,0 +1,11 @@
+//fibonacci sequence
+fn fib(n) {
+	if (n < 2) return n;
+	return fib(n-1) + fib(n-2);
+}
+
+print fib(12);
+
+//Note to my future self: yes, the base case in 'fib()' is 'n < 2', stop second guessing yourself!
+//Note to my past self: don't tell me what to do!
+//Note to both of you: keep it down you young whipper snappers!

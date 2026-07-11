@@ -1,0 +1,10 @@
+project: toy
+target: toy-parser-fuzz
+
+cmds:
+  - cmd: /mayhem/build/toy-parser-fuzz
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/toy-parser-fuzz/testsuite

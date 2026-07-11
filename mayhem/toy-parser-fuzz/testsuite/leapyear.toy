@@ -1,0 +1,18 @@
+//is 'n' a leap year
+fn isLeapYear(n: Int) {
+	if (n % 400 == 0) return true;
+	if (n % 100 == 0) return false;
+	return n % 4 == 0;
+}
+
+{
+	print isLeapYear(1999);
+}
+
+{
+	print isLeapYear(2000);
+}
+
+{
+	print isLeapYear(2004);
+}
